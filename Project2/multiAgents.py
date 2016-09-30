@@ -315,7 +315,7 @@ def betterEvaluationFunction(currentGameState):
         if d < md:
             md = d
     i = currentGameState.getGhostPosition(1)
-    l1 = i[0]-state[0]
+    l1 = i[0] - state[0]
     l2 = i[1] - state[1]
     if l1 < 0:
         l1 = -l1
@@ -326,7 +326,7 @@ def betterEvaluationFunction(currentGameState):
     l = len(newFood.asList()) + 2*len(capsules)
     if dd <= 1:
         d = -100
-    return 1/(md+1) + d + (100-l)
+    return 1/(md+1) + d + (1-l)
     util.raiseNotDefined()
 
 # Abbreviation

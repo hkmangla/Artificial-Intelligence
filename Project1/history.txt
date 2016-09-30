@@ -1,0 +1,1000 @@
+ 1006  cd ../
+ 1007  mkdir presentingData
+ 1008  cd presentingData/
+ 1009  make
+ 1010  nano redirection
+ 1011  chmod redirection 
+ 1012  chmod u+x redirection 
+ 1013  ./redirection 
+ 1014  ls
+ 1015  ls -al hemant
+ 1016  ls -al hemant > test1
+ 1017  ls
+ 1018  cat test1
+ 1019  ls -al hemant 2> test2
+ 1020  cat test2
+ 1021  nano test2
+ 1022  ls -al test > test
+ 1023  cat test
+ 1024  ls -al test  test test1 test2 test3 2> test2
+ 1025  cat test2
+ 1026  nano redirection 
+ 1027  ./redirection 
+ 1028  ls
+ 1029  cat test1
+ 1030  cat test2
+ 1031  nano redirection 
+ 1032  ./redirection 
+ 1033  ls
+ 1034  cat test1
+ 1035  cat test2
+ 1036  nano redirection 
+ 1037  ./redirection 
+ 1038  cat test3
+ 1039  cd MyDrive/Programming/AIProjects/
+ 1040  ls
+ 1041  cd Project2
+ 1042  python pacman.py
+ 1043  cd Project2
+ 1044  python pacman.py
+ 1045  python test.py
+ 1046  python bigMaze.py
+ 1047  python pacman.py -l bigMaze
+ 1048  python pacman.py 
+ 1049  python autograder.py
+ 1050  python pacman.py
+ 1051  cd 
+ 1052  cd MyDrive/Programming/Scripts/
+ 1053  cd UserInput/
+ 1054  ./hideUserInput 
+ 1055  cd ../
+ 1056  cd presentingData/
+ 1057  ls
+ 1058  nano redirection 
+ 1059  ls
+ 1060  nano redirectionScript
+ 1061  chmod u+x redirectionScript 
+ 1062  ./redirectionScript 
+ 1063  nano redirectionScript
+ 1064  ./redirectionScript 
+ 1065  ./redirectionScript 2> test4
+ 1066  cat test4
+ 1067  mv redirectionScript redirectTempScript
+ 1068  ls
+ 1069  ./redirectTempScript 
+ 1070  cp redirectTempScript  redirectPrmntScript
+ 1071  ls
+ 1072  nano redirectPrmntScript 
+ 1073  ./redirectPrmntScript 
+ 1074  nano redirectPrmntScript 
+ 1075  ./redirectPrmntScript 
+ 1076  cat PermanentError 
+ 1077  ls 
+ 1078  cat PemanentOut 
+ 1079  ls
+ 1080  nano redirectInputScript
+ 1081  chmod u+x redirectInputScript 
+ 1082  ./redirectInputScript 
+ 1083  cat test4
+ 1084  ./redirectInputScript 
+ 1085  nano redirectInputScript
+ 1086  ./redirectInputScript 
+ 1087  cd MyDrive/Programming/Scripts/UserInput/
+ 1088  ls
+ 1089  cd ../presentingData/
+ 1090  ls
+ 1091  nano redirectInputScript 
+ 1092  ./redirectInputScript 
+ 1093  nano redirectInputScript 
+ 1094  ./redirectInputScript 
+ 1095  nano redirectInputScript 
+ 1096  ./redirectInputScript 
+ 1097  nano ownRedirection
+ 1098  ls
+ 1099  chmod u+x ownRedirection 
+ 1100  ls
+ 1101  nano ownRedirection
+ 1102  ./ownRedirection 
+ 1103  ls
+ 1104  ./redirectInputScript 
+ 1105  nano ownRedirection
+ 1106  cp ownRedirection redirectDesc
+ 1107  ls
+ 1108  nano redirectDesc 
+ 1109  ./redirectDesc 
+ 1110  cat redDescOut 
+ 1111  nano redirectInputScript 
+ 1112  ./redirectInputScript 
+ 1113  nano redirectInputScript 
+ 1114  ./redirectInputScript 
+ 1115  nano redirectInputScript 
+ 1116  ./redirectInputScript 
+ 1117  nano redirectInputScript 
+ 1118  ./redirectInputScript 
+ 1119  nano redirectInputScript 
+ 1120  ./redirectInputScript 
+ 1121  ls
+ 1122  nano inputDescRdrt
+ 1123  chmod u+x inputDescRdrt 
+ 1124  ./inputDescRdrt 
+ 1125  nano inputDescRdrt
+ 1126  ./inputDescRdrt 
+ 1127  nano readWriteDesc
+ 1128  chmod u+x readWriteDesc 
+ 1129  ./readWriteDesc 
+ 1130  nano readWriteDesc
+ 1131  ./readWriteDesc 
+ 1132  cat test2
+ 1133  cp readWriteDesc closeDesc
+ 1134  nano closeDesc 
+ 1135  ./closeDesc 
+ 1136  nano closeDesc 
+ 1137  ./closeDesc 
+ 1138  nano closeDesc 
+ 1139  ./closeDesc 
+ 1140  lsof
+ 1141  /usr/sbin/lsog
+ 1142  /usr/sbin/lsof
+ 1143  lsof -a -p $$
+ 1144  lsof -a -p $$ -d 0,1,2
+ 1145  nano listofDesc
+ 1146  chmod u+x listofDesc 
+ 1147  ./listofDesc 
+ 1148  ls -al
+ 1149  ls -al /dev/null
+ 1150  ls -al > /dev/null
+ 1151  cat /dev/null
+ 1152  nano creatingTempFile
+ 1153  chmod u+x creatingTempFile 
+ 1154  ./creatingTempFile 
+ 1155  nano creatingTempFile
+ 1156  ./creatingTempFile 
+ 1157  cp creatingTempFile creatingTempDir
+ 1158  nano creatingTempDir 
+ 1159  ./creatingTempDir 
+ 1160  ls
+ 1161  cd tmp.sT8Abb/
+ 1162  ls
+ 1163  ls -al 
+ 1164  nano creatingTempDir 
+ 1165  cd ../
+ 1166  nano creatingTempDir 
+ 1167  ./creatingTempDir 
+ 1168  nano creatingTempDir 
+ 1169  ./creatingTempDir 
+ 1170  ld
+ 1171  ls
+ 1172  rm temp.W*
+ 1173  rm tmp.W*
+ 1174  rmdir tmp.W*
+ 1175  ls
+ 1176  rm temp.s*
+ 1177  rmdir tmp.s*
+ 1178  ls
+ 1179  ./creatingTempDir 
+ 1180  ls
+ 1181  cd tmp.gke9ZX/
+ 1182  ls
+ 1183  ls -al
+ 1184  nano creatingTempDir 
+ 1185  cd ../
+ 1186  nano creatingTempDir 
+ 1187  ./creatingTempDir 
+ 1188  ls
+ 1189  rmdir tmp.*
+ 1190  ls
+ 1191  ./creatingTempDir 
+ 1192  ls
+ 1193  cd tmp.SzU8kC/
+ 1194  ls
+ 1195  ls -al
+ 1196  cd ../
+ 1197  nano creatingTempDir 
+ 1198  ls
+ 1199  rmdir tmp.SzU8kC/
+ 1200  ls
+ 1201  nano creatingTempDir 
+ 1202  ./creatingTempDir 
+ 1203  cd tmp.MQk8A0/
+ 1204  ls
+ 1205  ls -al
+ 1206  cat tmp.ZjdmYL 
+ 1207  cd ../
+ 1208  nano teeCommand
+ 1209  chmod u+x teeCommand 
+ 1210  ./teeCommand 
+ 1211  cat test5
+ 1212  ls
+ 1213  ./redirectInputScript 
+ 1214  sleep 100
+ 1215  exit
+ 1216  ps -l
+ 1217  kill 5387
+ 1218  kill -9 5387
+ 1219  ps -l
+ 1220  sleep 100
+ 1221  ps -l
+ 1222  kill -9 5432
+ 1223  ps -l
+ 1224  cd ../
+ 1225  mkdir scriptControl
+ 1226  cd scriptControl/
+ 1227  nano trappingSignal
+ 1228  chmod u+x trappingSignal 
+ 1229  ls
+ 1230  nano trappingSignal
+ 1231  ./trappingSignal 
+ 1232  nano trappingSignal
+ 1233  ./trappingSignal 
+ 1234  nano trappingSignal
+ 1235  ./trappingSignal 
+ 1236  nano trappingSignal
+ 1237  ./trappingSignal 
+ 1238  cp trappingSignal modifyTrapping
+ 1239  nano modifyTrapping 
+ 1240  ./modifyTrapping 
+ 1241  nano modifyTrapping 
+ 1242  cp modifyTrapping removeTrapping
+ 1243  nano removeTrapping 
+ 1244  ./removeTrapping 
+ 1245  ps -e
+ 1246  ps -f
+ 1247  ps -e -f
+ 1248  ps -ef
+ 1249  ./removeTrapping 
+ 1250  ./removeTrapping &
+ 1251  ./removeTrapping &
+ 1252  ls
+ 1253  ;s
+ 1254  nonhup ./removeTrapping &
+ 1255  nohup ./removeTrapping &
+ 1256  cat nohup.out 
+ 1257  rm nohup.out 
+ 1258  ls
+ 1259  nohup ./removeTrapping &
+ 1260  ls
+ 1261  cat nohup.out 
+ 1262  nohup ./removeTrapping
+ 1263  cat nohup.out 
+ 1264  ls
+ 1265  rm nohup.out 
+ 1266  nohup ./removeTrapping &
+ 1267  cat nohup.out 
+ 1268  rm nohup.out 
+ 1269  ls
+ 1270  nohup ./removeTrapping &
+ 1271  ls
+ 1272  cat nohup.out 
+ 1273  nohup ./removeTrapping &
+ 1274  ps -f
+ 1275  cat nohup.out 
+ 1276  git
+ 1277  sudo apt-get install git
+ 1278  git
+ 1279  git init
+ 1280  rm .git/
+ 1281  rm .git
+ 1282  rmdir .git
+ 1283  cd MyDrive/Programming/
+ 1284  ls
+ 1285  cd Scripts/
+ 1286  git init
+ 1287  ls
+ 1288  ls -a
+ 1289  git add .
+ 1290  ls
+ 1291  cd .git/
+ 1292  ls
+ 1293  cd ../
+ 1294  git status
+ 1295  git add .
+ 1296  git status
+ 1297  git add whileLoopBasic 
+ 1298  git status
+ 1299  git clone "https://github.com/hkmangla/Data-Analyst-Nanodegree"
+ 1300  ls
+ 1301  cd Data-Analyst-Nanodegree/
+ 1302  ls
+ 1303  cd Project\ 0/
+ 1304  ls
+ 1305  cd ../
+ 1306  nano README.md 
+ 1307  cd ../
+ 1308  rmdir Data-Analyst-Nanodegree/
+ 1309  rmdir -f Data-Analyst-Nanodegree/
+ 1310  rmdir -ef Data-Analyst-Nanodegree/
+ 1311  ls
+ 1312  cd
+ 1313  git config --global user.name "hkmangla"
+ 1314  git config --global user.email "hemantmangla78@gmail.com"
+ 1315  git init Mytest
+ 1316  cd Mytest/
+ 1317  nano README
+ 1318  nano sample.c
+ 1319  git add README 
+ 1320  git add sample.c 
+ 1321  git commit -m "Let's see it!"
+ 1322  git remote add origin https://github.com/hkmangla/Mytest
+ 1323  git push origin master
+ 1324  cd
+ 1325  cd MyDrive/Programming/AIProjects/
+ 1326  git init
+ 1327  gedit README
+ 1328  git add .
+ 1329  git commit -m "First upload of all AI Project"
+ 1330  git remote add origin https://github.com/hkmangla/Artificial-Intelligence
+ 1331  git push origin master
+ 1332  cd ../Scripts/
+ 1333  git init
+ 1334  git add .
+ 1335  git commit -m "First upload of my scripts"
+ 1336  git remote add origin https://github.com/hkmangla/shellScripts
+ 1337  git push origin master
+ 1338  cd ../Nanodegree/
+ 1339  cd Intro_to_programming/
+ 1340  ls
+ 1341  git init
+ 1342  git add .
+ 1343  git commit -m "Final commit in this nanodegree"
+ 1344  git remoteadd origin https://github.com/hkmangla/Intro-to-Programming-Nanodegree
+ 1345  git remote add origin https://github.com/hkmangla/Intro-to-Programming-Nanodegree
+ 1346  git push origin master
+ 1347  git pull origin master
+ 1348  git push origin master
+ 1349  cd 
+ 1350  cd MyDrive/Programming/c_programs/Algorithms/
+ 1351  git init
+ 1352  git add .
+ 1353  git commit -m "First commit of algorithms"
+ 1354  git remote add origin https://github.com/hkmangla/Algorithms
+ 1355  git push origin master
+ 1356  git pull origin master
+ 1357  git push origin master
+ 1358  exit
+ 1359  nano findAlgofiles
+ 1360  chmod u+x findAlgofiles 
+ 1361  nano findAlgofiles
+ 1362  ./findAlgofiles 
+ 1363  nano findAlgofiles
+ 1364  ./findAlgofiles 
+ 1365  nano findAlgofiles
+ 1366  ./findAlgofiles 
+ 1367  nano findAlgofiles
+ 1368  ./findAlgofiles 
+ 1369  nano findAlgofiles
+ 1370  ./findAlgofiles 
+ 1371  nano findAlgofiles
+ 1372  ./findAlgofiles 
+ 1373  nano findAlgofiles
+ 1374  ./findAlgofiles 
+ 1375  nano findAlgofiles
+ 1376  ./findAlgofiles 
+ 1377  nano findAlgofiles
+ 1378  ./findAlgofiles 
+ 1379  nano findAlgofiles
+ 1380  ./findAlgofiles 
+ 1381  nano findAlgofiles
+ 1382  ./findAlgofiles 
+ 1383  ls
+ 1384  cd MyDrive/Programming/Scripts/
+ 1385  nano findfiles 
+ 1386  ./findfiles 
+ 1387  nano findfiles 
+ 1388  ./findfiles 
+ 1389  nano findfiles 
+ 1390  ./findfiles 
+ 1391  cd ../cppProgramms
+ 1392  git init
+ 1393  git add .
+ 1394  git commit -m "First commit in this repo"
+ 1395  nano README
+ 1396  git remote add origin https://github.com/hkmangla/cppProgramms
+ 1397  git push origin master
+ 1398  git --version
+ 1399  cd ../shellScripts/
+ 1400  ls
+ 1401  git add findfiles
+ 1402  git commit -m "File make for finding files"
+ 1403  git push findfiles
+ 1404  git push origin master
+ 1405  git pull origin master
+ 1406  git push origin master
+ 1407  git status
+ 1408  git --config list
+ 1409  git config --list
+ 1410  git help pull
+ 1411  git help push
+ 1412  git "My Project" > README
+ 1413  echo "My Project" > README
+ 1414  git status
+ 1415  ls
+ 1416  git status
+ 1417  git add README 
+ 1418  git status
+ 1419  git log
+ 1420  ls -lh
+ 1421  ls -l
+ 1422  sudo apt-get install compizconfig-settings-manager compiz-plugins compiz-plugins-extra
+ 1423  compizconfig-settings-manager
+ 1424  compiz
+ 1425  cd MyDrive/Programming/shellScripts/
+ 1426  cd ../vlsiTraining/
+ 1427  gedit upDownCounter.v
+ 1428  cd ../shellScripts/
+ 1429  ls
+ 1430  rm README
+ 1431  ls
+ 1432  nano findfiles 
+ 1433  hemant
+ 1434  $HOME
+ 1435  cd ../vlsiTraining/
+ 1436  gedit upDownCounter.v
+ 1437  cd ../shellScripts/
+ 1438  nano  findfiles 
+ 1439  cd
+ 1440  nano Anaconda-2.3.0-Linux-x86_64.sh 
+ 1441  less Anaconda-2.3.0-Linux-x86_64.sh 
+ 1442  ls -lh  Anaconda-2.3.0-Linux-x86_64.sh 
+ 1443  cd MyDrive/Programming/AIProjects/
+ 1444  cd Project2
+ 1445  python pacman.py
+ 1446  Hemant
+ 1447  echo $PATH
+ 1448  cd
+ 1449  ls -al
+ 1450  ls -a
+ 1451  gedit .profile 
+ 1452  echo $PATH
+ 1453  gedit .bashrc
+ 1454  terminal
+ 1455  error
+ 1456  echo terminal
+ 1457  echo Teri aesi ki tesi
+ 1458  echo hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+ 1459  last thing
+ 1460  last
+ 1461  thing
+ 1462  git 
+ 1463  git --version
+ 1464  gitn .user
+ 1465  git .user
+ 1466  git --global .email
+ 1467  git -global .email
+ 1468  git commit
+ 1469  exit
+ 1470  mkdir Bhojpuri
+ 1471  cd Bhojpuri/
+ 1472  youtube-dl -cit -f 17  "https://www.youtube.com/watch?v=LL2WDM5Iz-A&list=PLJOdfUKIdYScKLHIJS3zF9Is2EEXGiCCV"
+ 1473  youtube-dl --version
+ 1474  youtube-dl
+ 1475  wget "http://r1---sn-5uaeznd7.googlevideo.com/videoplayback?fexp=9405989%2C9416126%2C9416891%2C9419451%2C9422596%2C9428398%2C9429856%2C9431012%2C9433096%2C9433380%2C9433946%2C9434709%2C9435526%2C9435666%2C9435693%2C9435876%2C9437057%2C9437066%2C9437553%2C9437742%2C9438326%2C9438506%2C9438662%2C9439443%2C9439597%2C9439618%2C9439652%2C9440376&mt=1468312048&source=youtube&dur=9095.720&initcwndbps=173750&sver=3&sparams=dur%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cnh%2Cpl%2Csource%2Cupn%2Cexpire&nh=IgpwcjAxLmF0bDAxKgkxMjcuMC4wLjE&upn=IXAgt--XLKM&lmt=1332263498362903&ipbits=0&mime=video%2F3gpp&pl=22&mv=m&id=o-AFEIyUt1EwgygEU7PhELJ1xk2M0U9_h1-HucR2sGRGJK&ms=au&ip=173.208.91.154&expire=1468334000&key=yt6&itag=17&mm=31&mn=sn-5uaeznd7&signature=BB692D1D06E1DF691A69AFABD9785D43B082C8D6.2BEAA713404B1E7EDE87E7ECE18FC3896A4CE59A&title=Deewana"
+ 1476  wget "http://r8---sn-q0-qmce.googlevideo.com/videoplayback?key=yt6&expire=1468340037&sparams=dur%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2cms%2Cpl%2Csource%2Cupn%2Cexpire&mt=1468317754&upn=JuaY_9gUAi8&itag=17&fexp=9410705%2C9416126%2C9416891%2C9419452%2C9422596%2C9425620%2C9428398%2C9429854%2C9431012%2C9432367%2C9433096%2C9433221%2C9433946%2C9435526%2C9435876%2C9435891%2C9437066%2C9437553%2C9437663%2C9437742%2C9438662%2C9439580%2C9439610%2C9439652%2C9440268%2C9440286%2C9440376%2C9440432%2C9441108&ipbits=0&mime=video%2F3gpp&sver=3&pl=23&dur=8753.737&lmt=1386234482660774&ip=185.56.90.103&ms=au&pcm2cms=yes&mv=u&source=youtube&id=o-ACdeWdcpRE4WftAgZRleN040F4p5-BC5LEsFBjOewdfC&mn=sn-q0-qmce&mm=31&signature=D3009E9B17F9105D61168DC2A768EDC2D0E3297A.9D7F5739CDFE526283CAFC94D21A7C007F593C3C&title=Ek+Duuje+Ke+Liye"
+ 1477  ls
+ 1478  cd MyDrive/Programming/shellScripts/
+ 1479  ls
+ 1480  ls scriptControl/
+ 1481  cd scriptControl/
+ 1482  nano PIDofScripts
+ 1483  chmod u+x PIDofScripts 
+ 1484  ./PIDofScripts 
+ 1485  nano PIDofScripts
+ 1486  ./PIDofScripts 
+ 1487  nano PIDofScripts
+ 1488  ./PIDofScripts 
+ 1489  nano PIDofScripts
+ 1490  ./PIDofScripts 
+ 1491  ./PIDofScripts > jobsOut.txt &
+ 1492  jobs
+ 1493  jobs -l
+ 1494  jobs -p
+ 1495  jobs -l
+ 1496  ls
+ 1497  cat jobsOut.txt 
+ 1498  jobs -l
+ 1499  bg
+ 1500  jobs -l
+ 1501  jobs
+ 1502  ./PIDofScripts 
+ 1503  fg 
+ 1504  jobs
+ 1505  ps -o ppid,ni
+ 1506  ps -ef -o ppid,ni
+ 1507  ps -f -o ppid,ni
+ 1508  ps -ef
+ 1509  ps -ef -o ni
+ 1510  ls
+ 1511  ./trappingSignal > jobsOut.txt 
+ 1512  cat jobsOut.txt 
+ 1513  nice -n 10 ./trappingSignal > jobsOut.txt &
+ 1514  ps -p 9604 -0 ni,pid
+ 1515  ps -p 9604 -o ni,pid
+ 1516  nice -n 10 ./trappingSignal > jobsOut.txt &
+ 1517  ps -p 9620 -o ni,pid
+ 1518  nice -n -10 ./trappingSignal > jobsOut.txt &
+ 1519  ps -f 
+ 1520  cat jobsOut.txt 
+ 1521  nice -n -10 ./trappingSignal > jobsOut.txt &
+ 1522  ps -f
+ 1523  nice -n 10 ./trappingSignal > jobsOut.txt &
+ 1524  ps -f
+ 1525  renice -n 13 -p 9686
+ 1526  nice -n 10 ./trappingSignal > jobsOut.txt &
+ 1527  renice -n 13 -p 9710
+ 1528  ps -f
+ 1529  nano atCommand
+ 1530  chmod u+x atCommand 
+ 1531  ./atCommand 
+ 1532  nano atCommand
+ 1533  ./atCommand 
+ 1534  at -f atCommand NOW
+ 1535  sudo apt-get install at
+ 1536  at -f atCommand NOW
+ 1537  at -f atCommand.sh NOW
+ 1538  at -f atCommand NOW
+ 1539  jobs
+ 1540  at -f atCommand NOW
+ 1541  nano at
+ 1542  ls
+ 1543  nano atCommand 
+ 1544  at -f atCommand NOW
+ 1545  cat atCommand.out 
+ 1546  at -f atCommand NOW
+ 1547  cat atCommand.out 
+ 1548  at -f atCommand tomorrow
+ 1549  cat atCommand.out 
+ 1550  atq
+ 1551  atrm 8
+ 1552  atq
+ 1553  nano atCommand
+ 1554  nano cronTable
+ 1555  chmod u+x cronTable 
+ 1556  ./cronTable 
+ 1557  nano cronTable
+ 1558  crontab -l
+ 1559  ls /etc/cron.*ly
+ 1560  cat $HOME/.bashrc
+ 1561  ls $HOME/.bash*
+ 1562  ls /home/hemant/.bash_logout 
+ 1563  cat /home/hemant/.bash_logout 
+ 1564  cat /home/hemant/.profile
+ 1565  bash
+ 1566  cat /home/hemant/.profile
+ 1567  nano /home/hemant/.profile
+ 1568  bash
+ 1569  nano /home/hemant/.profile
+ 1570  gedit /home/hemant/.profile
+ 1571  gedit /home/hemant/.bashrc
+ 1572  bash
+ 1573  cd ../
+ 1574  mkdir function
+ 1575  cd function/
+ 1576  nano basicFunction
+ 1577  chmod u+x basicFunction 
+ 1578  nano basicFunction
+ 1579  ./basicFunction 
+ 1580  nano basicFunction
+ 1581  ./basicFunction 
+ 1582  nano basicFunction
+ 1583  ./basicFunction 
+ 1584  cp basicFunction returnFunction
+ 1585  nano returnFunction 
+ 1586  ./returnFunction 
+ 1587  nano returnFunction 
+ 1588  ./returnFunction 
+ 1589  cp returnFunction functionOutput
+ 1590  nano functionOutput 
+ 1591  ./functionOutput 
+ 1592  nano functionOutput 
+ 1593  ./functionOutput 
+ 1594  ls
+ 1595  nano functionOutput 
+ 1596  nano paramFunctin
+ 1597  ls
+ 1598  nano paramFunction
+ 1599  chmod u+x paramFunction 
+ 1600  nano paramFunction
+ 1601  ./paramFunction 
+ 1602  nano scriptParamFunction
+ 1603  chmod u+x scriptParamFunction 
+ 1604  nano scriptParamFunction
+ 1605  ./scriptParamFunction 
+ 1606  ./scriptParamFunction 10 10
+ 1607  ./scriptParamFunction 10 14
+ 1608  nano globalVariable
+ 1609  chmod u+x globalVariable 
+ 1610  nano globalVariable
+ 1611  ./globalVariable 
+ 1612  nano globalVariable
+ 1613  cp globalVariable localVariable
+ 1614  nano localVariable 
+ 1615  ./localVariable 
+ 1616  nano passArrayFunction
+ 1617  chmod u+x passArrayFunction 
+ 1618  nano passArrayFunction
+ 1619  ./passArrayFunction 
+ 1620  nano passArrayFunction
+ 1621  ./passArrayFunction 
+ 1622  nano passArrayFunction
+ 1623  ./passArrayFunction 
+ 1624  nano passArrayFunction
+ 1625  ./passArrayFunction 
+ 1626  nano passArrayFunction
+ 1627  ./passArrayFunction 
+ 1628  nano passArrayFunction
+ 1629  ./passArrayFunction 
+ 1630  nano passArrayFunction
+ 1631  ./passArrayFunction 
+ 1632  nano passArrayFunction
+ 1633  ./passArrayFunction 
+ 1634  nano passArrayFunction
+ 1635  ./passArrayFunction 
+ 1636  nano passArrayFunction
+ 1637  nano addArrayFunc
+ 1638  chmod u+x addArrayFunc 
+ 1639  nano addArrayFunc
+ 1640  ./addArrayFunc 
+ 1641  nano addArrayFunc
+ 1642  ./addArrayFunc 
+ 1643  nano addArrayFunc
+ 1644  ./addArrayFunc 
+ 1645  nano addArrayFunc
+ 1646  ./addArrayFunc 
+ 1647  nano addArrayFunc
+ 1648  cp addArrayFunc returnArrayFunc
+ 1649  nano return
+ 1650  nano returnArrayFunc 
+ 1651  ./returnArrayFunc 
+ 1652  nano returnArrayFunc 
+ 1653  ./returnArrayFunc 
+ 1654  nano returnArrayFunc 
+ 1655  ./returnArrayFunc 
+ 1656  nano returnArrayFunc 
+ 1657  ./returnArrayFunc 
+ 1658  nano returnArrayFunc 
+ 1659  ./returnArrayFunc 
+ 1660  nano returnArrayFunc 
+ 1661  ./returnArrayFunc 
+ 1662  nano returnArrayFunc 
+ 1663  ./returnArrayFunc 
+ 1664  nano returnArrayFunc 
+ 1665  ./returnArrayFunc 
+ 1666  nano returnArrayFunc 
+ 1667  ./returnArrayFunc 
+ 1668  nano returnArrayFunc 
+ 1669  ./returnArrayFunc 
+ 1670  nano returnArrayFunc 
+ 1671  ./returnArrayFunc 
+ 1672  nano recursionFunction
+ 1673  chmod u+x recursionFunction 
+ 1674  nano recursionFunction
+ 1675  ./recursionFunction 
+ 1676  nano createLibrary
+ 1677  chmod u+x createLibrary 
+ 1678  nano createLibrary
+ 1679  nano useLibrary
+ 1680  chmod u+x useLibrary 
+ 1681  ./useLibrary 
+ 1682  nano useLibrary
+ 1683  ./useLibrary 
+ 1684  function doubleit{ read -p "Enter value: " value; echo $[ $value * 2 ]; }
+ 1685  function doubleit { read -p "Enter value: " value; echo $[ $value * 2 ]; }
+ 1686  doubleit
+ 1687  exit
+ 1688  gedit .profile
+ 1689  gedit .bashrc
+ 1690  gedit .profile
+ 1691  exit
+ 1692  gedit .profile
+ 1693  exit
+ 1694  cd
+ 1695  gedit .bashrc
+ 1696  bash
+ 1697  gedit .bashrc
+ 1698  bash
+ 1699  gedit .bashrc
+ 1700  bash
+ 1701  gedit .bashrc
+ 1702  exit
+ 1703  cd
+ 1704  exit
+ 1705  gedit .bashrc
+ 1706  ls
+ 1707  cd
+ 1708  gedit .bashrc
+ 1709  bash
+ 1710  gedit .bashrc
+ 1711  bash
+ 1712  cd MyDrive/Programming/shellScripts/function/
+ 1713  nano useLibrary 
+ 1714  bash
+ 1715  echo -e "hemant"
+ 1716  echo lasfj
+ 1717  clear
+ 1718  cd ../
+ 1719  mkdir graphicalScript
+ 1720  cd graphicalScript/
+ 1721  nano createMainMenu
+ 1722  chmod u+x createMainMenu 
+ 1723  ./createMainMenu 
+ 1724  nano createMainMenu
+ 1725  ./createMainMenu 
+ 1726  nano createMainMenu
+ 1727  ./createMainMenu 
+ 1728  nano createMainMenu
+ 1729  ./createMainMenu 
+ 1730  nano createMainMenu
+ 1731  ./createMainMenu 
+ 1732  whoseon
+ 1733  nano createMainMenu
+ 1734  ./createMainMenu 
+ 1735  nano createMainMenu
+ 1736  ./createMainMenu 
+ 1737  df -k
+ 1738  nano createMainMenu
+ 1739  ./createMainMenu 
+ 1740  nano createMainMenu
+ 1741  ./createMainMenu 
+ 1742  nano createMainMenu
+ 1743  ./createMainMenu 
+ 1744  ls
+ 1745  cp createMainMenu selectCommand
+ 1746  ls
+ 1747  nano selectCommand 
+ 1748  ./selectCommand 
+ 1749  nano selectCommand 
+ 1750  ./selectCommand 
+ 1751  dialog
+ 1752  sed
+ 1753  editors
+ 1754  editor
+ 1755  cd ../
+ 1756  mkdir sedEditor
+ 1757  cd sedEditor/
+ 1758  echo "This is a test" | sed 's/test/big test/'
+ 1759  cp $HOME/req.txt
+ 1760  cp $HOME/req.txt /
+ 1761  cp $HOME/req.txt /home/hemant/MyDrive/Programming/shellScripts/sedEditor/
+ 1762  ls
+ 1763  sed 's/=/== | cat req.txt
+ 1764  sed 's/=/==' | cat req.txt
+ 1765  cat req.txt 
+ 1766  sed 's/=/==' req.txt
+ 1767  sed 's/=/==/' req.txtq.txt
+ 1768  sed 's/=/==/' req.txt
+ 1769  cat req.txt 
+ 1770  set
+ 1771  qoute
+ 1772  quote
+ 1773  quote hemany
+ 1774  qoute hemant
+ 1775  quote hemant
+ 1776  less set
+ 1777  less sets
+ 1778  cd
+ 1779  sets
+ 1780  set
+ 1781  set > check.sed
+ 1782  ls
+ 1783  less check.sed 
+ 1784  gedit check.sed 
+ 1785  rm check.sed 
+ 1786  ls
+ 1787  set > set.txt
+ 1788  gedit set.txt 
+ 1789  rm
+ 1790  rm set.txt 
+ 1791  set > set.sh
+ 1792  gedit set.sh 
+ 1793  ls
+ 1794  rm set.sh 
+ 1795  ls
+ 1796  mv Hostel-Brochure-2016.pdf /home/hemant/MyDrive/CollegeBooks/
+ 1797  ls
+ 1798  ls MyDrive/CollegeBooks/
+ 1799  ls
+ 1800  less examples.desktop 
+ 1801  git
+ 1802  cd
+ 1803  print "Hello wolrd"
+ 1804  printf "Hello wolrd"
+ 1805  printf "Hello wolrd\n"
+ 1806  diff 
+ 1807  cd MyDrive/Programming/shellScripts/
+ 1808  ls
+ 1809  cd function/
+ 1810  ls
+ 1811  diff returnArrayFunc returnFunction 
+ 1812  cat -n returnArrayFunc 
+ 1813  cat -nt returnArrayFunc 
+ 1814  cat -n returnArrayFunc 
+ 1815  clear
+ 1816  cd
+ 1817  gedit .bashrc
+ 1818  echo -e "\nhe"
+ 1819  echo "\nhe"
+ 1820  gedit .bashrc
+ 1821  bash
+ 1822  gedit .bashrc
+ 1823  bash
+ 1824  gedit .bashrc
+ 1825  bash
+ 1826  gedit .bashrc
+ 1827  bash
+ 1828  gedit .bashrc
+ 1829  bash
+ 1830  gedit .bashrc
+ 1831  bash
+ 1832  gedit .bashrc
+ 1833  bash
+ 1834  gedit .bashrc
+ 1835  bash
+ 1836  gedit .bashrc
+ 1837  bash
+ 1838  gedit .bashrc
+ 1839  bash
+ 1840  gedit .bashrc
+ 1841  bash
+ 1842  gedit .bashrc
+ 1843  bash
+ 1844  gedit .bashrc
+ 1845  bash
+ 1846  gedit .bashrc
+ 1847  bash
+ 1848  exit
+ 1849  doubleit
+ 1850  cd MyDrive/Programming/shellScripts/function/
+ 1851  ls
+ 1852  nano useLibrary 
+ 1853  bash
+ 1854  exit
+ 1855  clear; read 
+ 1856  welcomeText
+ 1857  exit
+ 1858  gedit .bashrc
+ 1859  cd MyDrive/Programming/cppProgramms/
+ 1860  runCpp
+ 1861  exit
+ 1862  cd MyDrive/Programming/cppProgramms/
+ 1863  runCpp
+ 1864  ls
+ 1865  runCpp
+ 1866  exit
+ 1867  cd MyDrive/Programming/cppProgramms/
+ 1868  runCpp
+ 1869  cd Algorithms/
+ 1870  ls
+ 1871  cd ../
+ 1872  ls b*
+ 1873  runCpp
+ 1874  exit
+ 1875  cd MyDrive/Programming/cppProgramms/
+ 1876  runCpp
+ 1877  2
+ 1878  exit
+ 1879  cd MyDrive/Programming/cppProgramms/
+ 1880  runCpp
+ 1881  exit
+ 1882  cd MyDrive/Programming/cppProgramms/
+ 1883  runCpp
+ 1884  exit
+ 1885  runCpp
+ 1886  cd MyDrive/Programming/cppProgramms/
+ 1887  runCpp
+ 1888  exit
+ 1889  cd MyDrive/Programming/cppProgramms/
+ 1890  runCpp
+ 1891  cat JulyLong1
+ 1892  cat JulyLong1.cpp 
+ 1893  runCpp
+ 1894  cd MyDrive/Programming/vlsiTraining/
+ 1895  gedit keyboardInterface.v
+ 1896  runCpp
+ 1897  welocmetext
+ 1898  welocmeText
+ 1899  welcomeText
+ 1900  cd MyDrive/Programming/AIProjects/Project2
+ 1901  python pacman.py
+ 1902  python autograder.py
+ 1903  python autograder.py --help
+ 1904  try net
+ 1905  python textDisplay.py
+ 1906  localhost
+ 1907  exit
+ 1908  welcomeText
+ 1909  exit
+ 1910  welcomeText
+ 1911  runCpp
+ 1912  exit
+ 1913  ipython
+ 1914  ipython notebook
+ 1915  cd MyDrive/Programming/Nanodegree/Data_analysis/
+ 1916  ls
+ 1917  cd Project\ 3
+ 1918  python cleandata.py 
+ 1919  cd ../
+ 1920  cd Project\ 1
+ 1921  python pacman.py -p SearchAgent -a fn=depthFirstSearch
+ 1922  cd
+ 1923  cd MyDrive/Programming/Nanodegree/Data_analysis/
+ 1924  cd Project\ 1
+ 1925  ls
+ 1926  cd 
+ 1927  cd MyDrive/Programming/AIProjects/Project1
+ 1928  python pacman.py -p SearchAgent -a fn=depthFirstSearch
+ 1929  ps -f
+ 1930  ps -ef
+ 1931  ps -e
+ 1932  ps
+ 1933  cd ../Project2
+ 1934  python pacman.py
+ 1935  cd
+ 1936  gedit .bashrc
+ 1937  gedit .bash
+ 1938  ls -a
+ 1939  gedit .profile 
+ 1940  gedit .bashrc
+ 1941  bash
+ 1942  exit
+ 1943  ps -f
+ 1944  exit
+ 1945  cd MyDrive/Programming/AIProjects/Project2
+ 1946  python pacman.py -p ExpectimaxAgent -l minimaxClassic -a depth=3
+ 1947  python pacman.py -p AlphaBetaAgent -l trappedClassic -a depth=3 -q -n 10
+ 1948  python pacman.py -p ExpectimaxAgent -l trappedClassic -a depth=3 -q -n 10
+ 1949  python pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic
+ 1950  python pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic --frameTime 0
+ 1951  python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=4
+ 1952  python pacman.py -p MinimaxAgent -l trappedClassic -a depth=3
+ 1953  python pacman.py -p AlphaBetaAgent -l trappedClassic -a depth=3
+ 1954  python autograder.py -q q5
+ 1955  cd ../Project1
+ 1956  python autograder.p
+ 1957  python autograder.py
+ 1958  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1959  python autograder.py
+ 1960  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1961  python autograder.py
+ 1962  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1963  python autograder.py
+ 1964  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1965  python autograder.py
+ 1966  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1967  python autograder.py
+ 1968  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1969  python autograder.py
+ 1970  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1971  python autograder.py
+ 1972  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1973  python autograder.py
+ 1974  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1975  python autograder.py
+ 1976  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1977  python autograder.py
+ 1978  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1979  python autograder.py
+ 1980  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 1981  python autograder.py
+ 1982  python pacman.py -l testSearch -p AStarFoodSearchAgent
+ 1983  python pacman.py -l trickySearch -p AStarFoodSearchAgent
+ 1984  youtube-dl -cit "https://www.youtube.com/watch?v=FtW4C1Y4kRc"
+ 1985  git init
+ 1986  https://www.youtube.com/watch?v=FtW4C1Y4kRc
+ 1987  youtube-dl  "https://www.youtube.com/watch?v=FtW4C1Y4kRc"
+ 1988  cd Bhojpuri/
+ 1989  youtube-dl  "https://www.youtube.com/watch?v=FtW4C1Y4kRc"
+ 1990  youtube-dl -cit  "https://www.youtube.com/watch?v=FtW4C1Y4kRc"
+ 1991  wget "https://ca.proxfree.com/page.php?get=%2FXKr6NrK9L2T0WRgVrGYYFLrctR8IgvVCFMfZSPeOLmsPa%2Bg4oSaTKO%2BeEJ7s9GPl6h8HY%2B6sqNr3FYzbQLqj1Q1Z9SE%2FW19V51VboTnaHFWqqR99WxdSNtLQub8ZnbZxO%2BV6WDct726AQiZUoUQ%2FbQnz3JywgD2ROq8nvvd3%2BzS%2B8bZwfI6L3ukTkPjydjsQXnkZVRYl1aLOSuW%2FRUnwMdDmSgaWEKVEZsMRHAkwTO7Kuh27HMCuFjV6RUmNaODARXaTqlxDPa5fodRxr2v3C0vA7opTkCb71uIA1x8H6xP1g7yoLnwEEPXJoU7HaxVoPa6eO00BnjeqTG5%2BIR0HRWuVz5bAkyP8TV3bO9SBkVwOQ9mLUSRpZ4Em3hO1FOqX2KU4v9m3AZmPP9paUzTOd3RKmmyFP3rytyvE1Mz4ud9VTBU3nEm0E2FnsEf81Ldpj4mSGE%2FKeI1P8zTLhsAcEQYVql5Wy632zqwpM3RT5s%2Br7zh0WuQEPCy0IPZtkY%2FoRz2hgZX5yCVb2QtTJTnd6847%2Bp7fXf8m0J6%2FK5pohOBTRKPmAeUSXg5cKyUiScIVI9mmKp5ZmD31sigM%2BQP6s1PDzG1Bc2lGRYDvZVlVJRypxnvIj30bqMr0YmYTUg0fcihqce6e9fVNgP%2BSYEeG%2B%2BafMWUE%2Fa737V%2FELYeQaENsnirQSOTl9a%2FqaFDuEKF9Uv08LX2PaLKeFqD3qm1x16xVaXCdC%2FxRD%2BW%2By72LCZKeRGzETsrB2iOIBTju7yTXHzYljQIijOf5htfkBcd1ieZeVnWxww7lSdfwWBISbvuBHA%2B5o8FNcuOLnm0Hp7IlN9CcnyG9yRLvIGBWxRyh%2Fn%2FP4AKAW3mHLq6mVgoPHkdlOPrfFpwnouzujG9j1B6WOevejIuAlSO8ee29bg%2FUh23yfxJIOzfSlkVd2zSlrJio2QIV7yZKrbZsc09rrqMB4ChyIXnIQDtlPYkPwDaob4k30YNM2lY%2BrTDvkcKH93Ixdr%2FkLu18i0LsoimAgDXiA81ZL87KSDo9kS4qICL%2FIoxoQRys1KVaa8DPC6HBI37an%2Bd9ncyZpCznTP8t3MLIbg%2FzQFFrI%2Ba7TGN15Tc0%2BOtKjhN1pqhSg0KSn466MlD7LNEwSLSZ7N37cWW%2BAdN4yDuG5uQCk8cR3k7cqb2EkvsVGyD1LTcKS5JqgrcAR480bZwodkEYQYbOqHk2daUtUfFu%2BjjK2EDiKCEdIMpqmUqT9am%2B35aNNXcnhsd5uEZOZI92mRs%2FWgtDilrx1IxPqItlnscxVnXFJN5wSZSe5cc4F5EuV%2FVqFwrA7u5xaNTcjiVy2XxND5YxHUhTWsGoFUEla7WG31HRRAY%2FgitaPxBnRhoVEdTWnJ1lwJ4eke0gCYZ9ZOUitjEi9Ov%2BphCaPX6j0syqmRCEzk9eplqK6DP9LjMQGqkSEmUQOsVvnziEegiMZ%2BrQfuXJWxiMcgLIhV8Xen2ftLZHZp3AjMlQvhjmgOj4YSPpRIZIMC5ELjZWSqv1jM0ujrL%2FfSf2ZYWXdU22Szw2c6ZlYF95%2F3Kw9GioZVy%2BsYnWYJBE1obk8U%3D&key=5039354322f3c116&bit=1"
+ 1992  ls
+ 1993  whoami
+ 1994  mkdir HaryanviSong
+ 1995  cd HaryanviSong/
+ 1996  youtube-dl -cit "https://www.youtube.com/watch?v=OIWODS0MY1M&list=PLcq5TIZ4_hcGvcdUD6B38nfBL8SokMd5V"
+ 1997  youtube-dl -cit -f 140 "https://www.youtube.com/watch?v=OIWODS0MY1M&list=PLcq5TIZ4_hcGvcdUD6B38nfBL8SokMd5V"
+ 1998  cd HaryanviSong/
+ 1999  youtube-dl -cit -f 140 "https://www.youtube.com/watch?v=OIWODS0MY1M&list=PLcq5TIZ4_hcGvcdUD6B38nfBL8SokMd5V"
+ 2000  cd MyDrive/Programming/AIProjects/Project1
+ 2001  python pacman.py
+ 2002  python pacman.py -p SearchAgent -a fn=depthFirstSearch
+ 2003  history
+ 2004  python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+ 2005  history > history.txt
