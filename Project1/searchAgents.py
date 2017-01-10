@@ -296,10 +296,7 @@ class CornersProblem(search.SearchProblem):
         space)
         """
         nextx,nexty = self.startingPosition
-        state1 = [(nextx,nexty)]
-        for i in self.corners:
-            state1.append(pow(i[0] - nextx , 2) + pow(i[1] - nexty , 2))
-        state = tuple(state1)
+        state = [(nextx,nexty),False,False,False,False]
         return state
         util.raiseNotDefined()
 
@@ -307,7 +304,7 @@ class CornersProblem(search.SearchProblem):
         """
         Returns whether this search state is a goal state of the problem.
         """                 
-        return state[1]+state[2]+state[3]+state[4] == 0
+        return state[1] and state[2] and state[3] and state[4]
         util.raiseNotDefined()
 
     def getSuccessors(self, state):
@@ -331,14 +328,11 @@ class CornersProblem(search.SearchProblem):
             hitsWall = self.walls[nextx][nexty]
             k = 1
             if not hitsWall:
-                state1 = [(nextx,nexty)]
+                nextstate = [(nextx,nexty)]
                 for i in self.corners:
-                    if state[k]!=0:
-                        state1.append(pow(i[0] - nextx , 2) + pow(i[1] - nexty , 2))
-                    else:
-                        state1.append(0)
-                    k = k + 1
-                nextstate = tuple(state1)   
+                    nextstate.append((nextstate[0] == i) or state[k])
+                    k += 1
+                nextstate = tuple(nextstate)   
                 successors.append((nextstate,action,1))
 
         self._expanded += 1 # DO NOT CHANGE
