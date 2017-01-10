@@ -472,12 +472,15 @@ def foodHeuristic(state, problem):
     """
     position, foodGrid = state
     "*** YOUR CODE HERE ***"
+    def mhD(a,b):
+        return abs(a[0] - b[0]) + abs(a[1]-b[1])
     d = 0
     for i in foodGrid.asList():
         distance = math.sqrt(pow(position[0]-i[0],2)+pow(position[1]-i[1],2))
         if distance > d:
             d = distance
     return d
+
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
     def registerInitialState(self, state):
@@ -506,7 +509,30 @@ class ClosestDotSearchAgent(SearchAgent):
         walls = gameState.getWalls()
         problem = AnyFoodSearchProblem(gameState)
         "*** YOUR CODE HERE ***"
-        #print problem.getSuccessors((1,3))
+        closset = []
+        actions = {}
+        target = (0,0)
+        fringe = util.Queue()
+        fringe.push(problem.getStartState())
+        while (not fringe.isEmpty()):
+            node = fringe.pop()
+            if food[node[0]][node[1]]:
+                target = node
+                break
+            if node not in closset:
+                closset.append(node)
+                for childNode,direction,cost in problem.getSuccessors(node):
+                    if childNode not in closset:
+                        if childNode not in actions:
+                            actions[childNode] = (direction,node)
+                        fringe.push(childNode)
+        action = []
+        curr = target
+        while(curr != problem.getStartState()):
+            action.append(actions[curr][0])
+            curr = actions[curr][1]
+        action.reverse()
+        return action    
         util.raiseNotDefined()
 
 class AnyFoodSearchProblem(PositionSearchProblem):
