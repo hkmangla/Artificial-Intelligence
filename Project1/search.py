@@ -112,11 +112,12 @@ def breadthFirstSearch(problem):
         	target = node
         	break
         if node not in closset:
-            closset.append(node)
-            for childNode,direction,cost in problem.getSuccessors(node):
-            	if childNode not in closset:
-            		actions[childNode] = (direction,node)
-            		fringe.push(childNode)
+	        closset.append(node)
+	        for childNode,direction,cost in problem.getSuccessors(node):
+	           	if childNode not in closset:
+	           		if childNode not in actions:
+		           		actions[childNode] = (direction,node)
+	           		fringe.push(childNode)
     action = []
     curr = target
     while(curr != problem.getStartState()):
@@ -130,12 +131,11 @@ def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
     closset = []
-    actions = {}
     costs = {}
-    costs = defaultdict(lambda: 10000000000, costs)
+    costs = defaultdict(lambda: 1000000000000, costs)
     fringe = util.PriorityQueue()
     fringe.push(problem.getStartState(),0)
-    actions[problem.getStartState()] = []
+    actions = defaultdict(list)
     while (not fringe.isEmpty()):
         node = fringe.pop()
         if problem.isGoalState(node):
