@@ -16,7 +16,7 @@
 In search.py, you will implement generic search algorithms which are called by
 Pacman agents (in searchAgents.py).
 """
-
+from collections import defaultdict
 import util
 
 class SearchProblem:
@@ -75,97 +75,79 @@ def tinyMazeSearch(problem):
 def depthFirstSearch(problem):
     "*** YOUR CODE HERE ***"
     closset = []
-    action = {}
+    actions = {}
+    target = (0,0)
     fringe = util.Stack()
-    start = (problem.getStartState(),'Stop',0)
-    fringe.push(start)
-    while (1):
-        if fringe.isEmpty():
-            break
+    fringe.push(problem.getStartState())
+    while (not fringe.isEmpty()):
         node = fringe.pop()
-        if problem.isGoalState(node[0]):
-             return action[node[0]]    
-        if node[0] not in closset:
-            closset.append(node[0])
-            for childNode,direction,cost in problem.getSuccessors(node[0]):
-                 list2 = []
-                 if node[0] !=  problem.getStartState():
-                     for i in action[node[0]]:
-                         list2.append(i)
-                 list2.append(direction)
-                 action[childNode] = list2
-                 head = (childNode,direction,cost)   
-                 fringe.push(head)             
+        if problem.isGoalState(node):
+        	target = node
+        	break
+        if node not in closset:
+            closset.append(node)
+            for childNode,direction,cost in problem.getSuccessors(node):
+            	if childNode not in closset:
+            		actions[childNode] = (direction,node)
+            		fringe.push(childNode)
+    action = []
+    curr = target
+    while(curr != problem.getStartState()):
+    	action.append(actions[curr][0])
+    	curr = actions[curr][1]
+    action.reverse()
+    return action                
     util.raiseNotDefined()
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     closset = []
-    action = {}
-    #path = {}
+    actions = {}
+    target = (0,0)
     fringe = util.Queue()
-    start = (problem.getStartState(),'Stop',0)
-    #path[problem.getStartState()] = problem.getStartState()
-    fringe.push(start)
-    while (1):
-        if fringe.isEmpty():
-            break
+    fringe.push(problem.getStartState())
+    while (not fringe.isEmpty()):
         node = fringe.pop()
-        if problem.isGoalState(node[0]):
-             return action[node[0]]    
-        if node[0] not in closset:
-            closset.append(node[0])
-            for childNode,direction,cost in problem.getSuccessors(node[0]):
-                 if childNode not in action.keys():
-                     list2 = []
-                   #  list1 = []
-                     if node[0] !=  problem.getStartState():
-                         for i in action[node[0]]:
-                             list2.append(i)
-                      #   for i in path[node[0]]:
-                       #      list2.append(i)
-                     list2.append(direction)
-                     #print childNode
-                     action[childNode] = list2
-                     #path[childNode] = list1
-                 head = (childNode,direction,cost)   
-                 fringe.push(head)             
+        if problem.isGoalState(node):
+        	target = node
+        	break
+        if node not in closset:
+            closset.append(node)
+            for childNode,direction,cost in problem.getSuccessors(node):
+            	if childNode not in closset:
+            		actions[childNode] = (direction,node)
+            		fringe.push(childNode)
+    action = []
+    curr = target
+    while(curr != problem.getStartState()):
+    	action.append(actions[curr][0])
+    	curr = actions[curr][1]
+    action.reverse()
+    return action               
     util.raiseNotDefined()
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
     closset = []
-    action = {}
+    actions = {}
+    costs = {}
+    costs = defaultdict(lambda: 10000000000, costs)
     fringe = util.PriorityQueue()
-    start = (problem.getStartState(),'Stop',0)
-    fringe.push(start,0)
-    while (1):
-        if fringe.isEmpty():
-            break
+    fringe.push(problem.getStartState(),0)
+    actions[problem.getStartState()] = []
+    while (not fringe.isEmpty()):
         node = fringe.pop()
-        if problem.isGoalState(node[0]):
-             return action[node[0]]    
-        if node[0] not in closset:
-            closset.append(node[0])
-            for childNode,direction,cost in problem.getSuccessors(node[0]):
-                list2 = []
-                if node[0] !=  problem.getStartState():
-                    for i in action[node[0]]:
-                        list2.append(i)
-                list2.append(direction)
-                childcost = problem.getCostOfActions(list2)
-                if childNode in action.keys():
-                    if childcost < problem.getCostOfActions(action[childNode]):
-                        action[childNode] = list2
-                if childNode not in action.keys():
-                    action[childNode] = list2
-                head = (childNode,direction,cost)
-                if childNode !=  problem.getStartState():
-                    priority = problem.getCostOfActions(action[childNode])
-                if childNode ==  problem.getStartState():
-                    priority = 0
-                fringe.push(head,priority)             
+        if problem.isGoalState(node):
+            return actions[node]	
+        if node not in closset:
+            closset.append(node)
+            for childNode,direction,cost in problem.getSuccessors(node):
+            	childcost = problem.getCostOfActions(actions[node] + [direction])
+            	if childNode not in closset and childcost < costs[childNode]:
+            		actions[childNode] = actions[node] + [direction]
+            		costs[childNode] = childcost
+            	fringe.push(childNode,costs[childNode])               
     util.raiseNotDefined()
 
 def nullHeuristic(state, problem=None):
@@ -179,38 +161,25 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
     closset = []
-    action = {}
+    actions = {}
+    costs = {}
+    costs = defaultdict(lambda: 10000000000, costs)
     fringe = util.PriorityQueue()
-    start = (problem.getStartState(),'Stop',0)
-    fringe.push(start,0)
-    while (1):
-        if fringe.isEmpty():
-            break
+    fringe.push(problem.getStartState(),0)
+    actions[problem.getStartState()] = []
+    while (not fringe.isEmpty()):
         node = fringe.pop()
-        if problem.isGoalState(node[0]):
-             return action[node[0]]    
-        if node[0] not in closset:
-            closset.append(node[0])
-            for childNode,direction,cost in problem.getSuccessors(node[0]):
-                list2 = []
-                if node[0] !=  problem.getStartState():
-                    for i in action[node[0]]:
-                        list2.append(i)
-                list2.append(direction)
-                childcost = problem.getCostOfActions(list2)
-                if childNode in action.keys():
-                    if childcost < problem.getCostOfActions(action[childNode]):
-                        action[childNode] = list2
-                if childNode not in action.keys():
-                    action[childNode] = list2
-                head = (childNode,direction,cost)
-                if childNode !=  problem.getStartState():
-                    priority = problem.getCostOfActions(action[childNode])
-                if childNode ==  problem.getStartState():
-                    priority = 0
-                fringe.push(head,priority+heuristic(childNode,problem))             
+        if problem.isGoalState(node):
+            return actions[node]	
+        if node not in closset:
+            closset.append(node)
+            for childNode,direction,cost in problem.getSuccessors(node):
+            	childcost = problem.getCostOfActions(actions[node] + [direction])
+            	if childNode not in closset and childcost < costs[childNode]:
+            		actions[childNode] = actions[node] + [direction]
+            		costs[childNode] = childcost
+            	fringe.push(childNode,costs[childNode]+heuristic(childNode,problem))               
     util.raiseNotDefined()
-
 
 # Abbreviations
 bfs = breadthFirstSearch
