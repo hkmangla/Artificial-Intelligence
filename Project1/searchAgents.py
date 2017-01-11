@@ -473,25 +473,7 @@ def foodHeuristic(state, problem):
     position, foodGrid = state
     walls = problem.walls
     "*** YOUR CODE HERE ***"
-    # def dist(g):
-    #     h = walls.height
-    #     w = walls.width
-    #     dis = 0 
-    #     if g[0] != 0:
-    #         if g[1] != 0:
-    #             if walls[g[0]-1][g[1]-1]:
-    #                 dis += 1
-    #         if g[1] != h:
-    #             if walls[g[0]-1][g[1]+1]:
-    #                 dis += 1
-    #     if g[0] != w:
-    #         if g[1] != 0:
-    #             if walls[g[0]+1][g[1]-1]:
-    #                 dis += 1
-    #         if g[1] != h:
-    #             if walls[g[0]+1][g[1]+1]:
-    #                 dis += 1
-    #     return dis
+
     distance = 0
     for g in foodGrid.asList():
         for k in foodGrid.asList():
