@@ -471,15 +471,34 @@ def foodHeuristic(state, problem):
     problem.heuristicInfo['wallCount']
     """
     position, foodGrid = state
+    walls = problem.walls
     "*** YOUR CODE HERE ***"
-    def mhD(a,b):
-        return abs(a[0] - b[0]) + abs(a[1]-b[1])
-    d = 0
-    for i in foodGrid.asList():
-        distance = math.sqrt(pow(position[0]-i[0],2)+pow(position[1]-i[1],2))
-        if distance > d:
-            d = distance
-    return d
+    # def dist(g):
+    #     h = walls.height
+    #     w = walls.width
+    #     dis = 0 
+    #     if g[0] != 0:
+    #         if g[1] != 0:
+    #             if walls[g[0]-1][g[1]-1]:
+    #                 dis += 1
+    #         if g[1] != h:
+    #             if walls[g[0]-1][g[1]+1]:
+    #                 dis += 1
+    #     if g[0] != w:
+    #         if g[1] != 0:
+    #             if walls[g[0]+1][g[1]-1]:
+    #                 dis += 1
+    #         if g[1] != h:
+    #             if walls[g[0]+1][g[1]+1]:
+    #                 dis += 1
+    #     return dis
+    distance = 0
+    for g in foodGrid.asList():
+        for k in foodGrid.asList():
+            distance = max(distance, abs(g[0] - k[0]) + abs(g[1] - k[1]))
+    for g in foodGrid.asList():
+        distance = max(distance, abs(g[0] - position[0]) + abs(g[1] - position[1]))
+    return (distance)
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
