@@ -181,6 +181,46 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
           Returns the minimax action using self.depth and self.evaluationFunction
         """
         "*** YOUR CODE HERE ***"
+        def max_value(GameState, agent, depth, alpha, beta):
+            v = float("-inf")
+            actions = ''
+            nextAgent = (agent+1)%GameState.getNumAgents()
+            legalActions = GameState.getLegalActions(agent)
+            if len(legalActions) == 0:
+                return self.evaluationFunction(GameState)
+            for action in legalActions:
+                new_v = min_value(GameState.generateSuccessor(agent,action), nextAgent, depth, alpha, beta)
+                if new_v > v:
+                    v = new_v
+                    actions = action
+                    if new_v > beta:
+                        return new_v
+                    alpha = max(alpha, new_v)
+            if depth == 1:
+                return actions 
+            return v
+
+        def min_value(GameState, agent, depth, alpha, beta):
+            v = float("inf")
+            nextAgent = (agent+1)%GameState.getNumAgents()
+            legalActions = GameState.getLegalActions(agent)
+            if len(legalActions) == 0:
+                return self.evaluationFunction(GameState)
+            for action in GameState.getLegalActions(agent):
+                if nextAgent != 0:
+                        v = min(v, min_value(GameState.generateSuccessor(agent,action), nextAgent, depth, alpha, beta))
+                else:
+                    if depth < self.depth:
+                        v = min(v, max_value(GameState.generateSuccessor(agent,action), nextAgent, depth+1, alpha, beta))
+                    else:
+                        v = min(v, self.evaluationFunction(GameState.generateSuccessor(agent, action)))
+
+                if v < alpha:
+                    return v
+                beta = min(beta, v)
+            return v
+        return  max_value(gameState, 0, 1, float("-inf"), float("inf"))
+        
         util.raiseNotDefined()
 
 class ExpectimaxAgent(MultiAgentSearchAgent):
@@ -196,6 +236,39 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
           legal moves.
         """
         "*** YOUR CODE HERE ***"
+        def max_value(GameState, agent, depth):
+            v = float("-inf")
+            actions = ''
+            nextAgent = (agent+1)%GameState.getNumAgents()
+            legalActions = GameState.getLegalActions(agent)
+            if len(legalActions) == 0:
+                return self.evaluationFunction(GameState)
+            for action in legalActions:
+                new_v = avg_value(GameState.generateSuccessor(agent,action), nextAgent, depth)
+                if new_v > v:
+                    v = new_v
+                    actions = action
+            if depth == 1:
+                return actions 
+            return v
+
+        def avg_value(GameState, agent, depth):
+            v = 0
+            nextAgent = (agent+1)%GameState.getNumAgents()
+            legalActions = GameState.getLegalActions(agent)
+            if len(legalActions) == 0:
+                return self.evaluationFunction(GameState)
+            for action in legalActions:
+                if nextAgent != 0:
+                        v += avg_value(GameState.generateSuccessor(agent,action), nextAgent, depth)
+                else:
+                    if depth < self.depth:
+                        v += max_value(GameState.generateSuccessor(agent,action), nextAgent, depth+1)
+                    else:
+                        v += self.evaluationFunction(GameState.generateSuccessor(agent, action))
+            return v/float(len(legalActions))
+        return  max_value(gameState, 0, 1)
+
         util.raiseNotDefined()
 
 def betterEvaluationFunction(currentGameState):
