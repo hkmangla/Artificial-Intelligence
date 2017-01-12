@@ -15,7 +15,7 @@
 from util import manhattanDistance
 from game import Directions
 import random, util
-
+import math
 from game import Agent
 
 class ReflexAgent(Agent):
@@ -74,7 +74,6 @@ class ReflexAgent(Agent):
         newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
 
         "*** YOUR CODE HERE ***"
-        import math
         ut = 10000000
         for i in newFood.asList():
             ut = min(ut,math.sqrt(pow(i[0]-newPos[0],2) + pow(i[1] - newPos[1],2)))
@@ -279,6 +278,25 @@ def betterEvaluationFunction(currentGameState):
       DESCRIPTION: <write something here so we know what you did>
     """
     "*** YOUR CODE HERE ***"
+    newPos = currentGameState.getPacmanPosition()
+    newFood = currentGameState.getFood()
+    newGhostStates = currentGameState.getGhostStates()
+    newScaredTimes = [ghostState.scaredTimer for ghostState in newGhostStates]
+    ut = 10000
+    if len(newFood.asList()) == 0:
+        return ut
+    for i in newFood.asList():
+        ut = min(ut,math.sqrt(pow(i[0]-newPos[0],2) + pow(i[1] - newPos[1],2)))
+    ut = 1/(ut+1)
+    for i in range(len(newGhostStates)):
+        ghostDis = manhattanDistance(newPos,newGhostStates[i].getPosition())
+        if ghostDis <= 1: 
+            if newScaredTimes[i] == 0:
+                ut -= 100
+            else:
+                ut += 8
+    ut = ut - 10*(len(newFood.asList())) - 2*len(currentGameState.getCapsules())
+    return ut
     util.raiseNotDefined()
 
 # Abbreviation
