@@ -269,6 +269,8 @@ class ParticleFilter(InferenceModule):
             for pos in self.legalPositions:
                 samples.append(pos)
                 particles -= 1
+                if particles == 0:
+                    break
         self.parDist = samples
         return self.parDist
     
@@ -362,8 +364,7 @@ class ParticleFilter(InferenceModule):
         beliefs = util.Counter()
         for pos in self.parDist:
             beliefs[pos] += 1.0
-        for pos in beliefs.keys():
-            beliefs[pos] /= float(self.numParticles)
+        beliefs.normalize()
         return beliefs
         util.raiseNotDefined()
 
